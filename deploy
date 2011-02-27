@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+jekyll --no-auto && rsync -avz --rsh="ssh -p22123" _site/ hertze@hertze.com:~/public_html
