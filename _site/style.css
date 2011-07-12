@@ -5,6 +5,7 @@
 
 body {
 	font: 130% Helvetica;
+	font-weight: 300;
 }
 
 p { 
@@ -26,19 +27,27 @@ a {
 	color: #ff9131; 
 	font-weight: bold; 
 	text-decoration: none; 
-	border-bottom: 1px solid rgba(255,255,255,0.3); 
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	-o-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
 }
 
 a:hover { 
 	color: #ffd285; 
-	border-bottom: 1px solid rgba(255,255,255,1);
 }
 
 #social img {
 	margin-right: 10px;
 }
 
-#social a { opacity: 0.5;}
+#social a { 
+	opacity: 0.5;
+	-webkit-transition:all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	-o-transition:all .5s ease-in-out;
+	transition:all .5s ease-in-out;
+}
 
 #social a:hover { opacity: 1;}
 
@@ -54,7 +63,14 @@ a:hover {
 	opacity: 0.3;
 	position: absolute;
 	bottom: 1em;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	-o-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
 }
+
+#attribution:hover {opacity: 1;}
+
 .typekit-badge {
 	display:none !important;
 }
