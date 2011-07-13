@@ -1,6 +1,0 @@
-RewriteEngine on
-
-Redirect 301 /makeup http://annahertze.se
-Redirect 301 /blogg/ http://swedishpixels.com/
-Redirect 301 /masterfeed/ http://swedishpixels.com/masterfeed.xml
-
