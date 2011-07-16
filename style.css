@@ -4,22 +4,22 @@
 }
 
 body {
-	font: 130% Helvetica;
+	font: 140% Helvetica;
 	font-weight: 300;
 }
 
 p { 
 	color: #000; 
 	font-size: 1em; 
-	line-height: 1.5em; 
-	margin-bottom: 22px; 
+	line-height: 1.4em; 
+	margin-bottom: 1.4em; 
 	-webkit-font-smoothing: antialiased; 
 }
 
 h1 {
 	font-size: 1.5em;
-	line-height: 1.5em;
-	margin: 0.5em 0;
+	line-height: 0.933em;
+	margin: 0.933em 0;
 	font-weight: 300;
 }
 
