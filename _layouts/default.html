@@ -1,76 +1,32 @@
-<!DOCTYPE HTML>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}Swedish Pixels</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="maximum-scale=1.0" />
-    <link rel="stylesheet" media="screen, projection" href="/css/screen.css" type="text/css">
-    <link rel="stylesheet" media="print" href="/css/print.css" type="text/css">
-    <link rel="alternate" type="application/atom+xml" title="Swedish Pixels" href="http://feeds.feedburner.com/swedishpixels/masterfeed">
-    <link rel="shortcut icon" href="/favicon.ico">
-
-	<script src="/js-global/FancyZoom.js" type="text/javascript"></script>
-	<script src="/js-global/FancyZoomHTML.js" type="text/javascript"></script>
-	<script src="/js-global/button.js" type="text/javascript"></script>
-	<script type="text/javascript" src="http://use.typekit.com/arb3nzw.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	
-	<script type="text/javascript">
-
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-85030-2']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-
-	</script>
-	
-	<meta name="readability-verification" content="6yHtRVP3TgNfc5SghJ4PTQmYSjmkeJDNWbnTMZ9D">
-	<meta name="google-site-verification" content="759i312dRArVW8d6Pq4IDIib1WFJ68gLjvYbbqQWKks" />
-	
-	<script src="//static.getclicky.com/js" type="text/javascript"></script>
-	<script type="text/javascript">try{ clicky.init(66451021); }catch(e){}</script>
-	<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66451021ns.gif" /></p></noscript>
-	
-  </head>
-  <body onload="setupZoom()">
-    <div id="header">
-		<a href="/"><img src="/bilder/generic/logo-2011-v4.png"  alt="To the front page" /></a>
-		<ul id="menu">
-			{% if page.title %}<li><a href="/">Front page</a></li>{% endif %}{% unless page.title == 'Highlights' %}<li><a href="/highlights">Highlights</a></li>{% endunless %}{% unless page.title == 'Archive' %}<li><a href="/archive">Archive</a></li>{% endunless %}
-		</ul>
-	
-    </div>
-
- 	<div id="main" class="clearfix">
-      {{ content }}
-    </div>
-    <div id="footer-wrapper" class="clearfix">
-		<div id="footer">
-			<div id="bild">
-				<img src="/bilder/generic/pixellogo-sepia.png" alt="Logotype" />
-			</div>
-			<div id="text">
-     			<p>This is Swedish Pixels, a website written by <a href="http://hertze.com/">Joakim Hertze</a>.<br />{% unless page.title == 'Archive' %}Older contents is available from the <a href="/archive">archive</a>.{% endunless %} Please direct all correspondence to <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#101;&#115;&#107;&#64;&#115;&#119;&#101;&#100;&#105;&#115;&#104;&#112;&#105;&#120;&#101;&#108;&#115;&#46;&#99;&#111;&#109;'>&#100;&#101;&#115;&#107;&#64;&#115;&#119;&#101;&#100;&#105;&#115;&#104;&#112;&#105;&#120;&#101;&#108;&#115;&#46;&#99;&#111;&#109;</a>.</p>
-				<form action="http://www.google.com/cse" id="cse-search-box">
-				  <div>
-				    <input type="hidden" name="cx" value="008173375598823628199:vllpzjbtniu" />
-				    <input type="hidden" name="ie" value="UTF-8" />
-				    <input type="text" name="q" size="31" />
-				    <input type="submit" name="sa" value="Search" />
-				  </div>
-				</form>
-				<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
-			</div>
-		</div>
-    </div>
-	<div id="legal">
-		<p>&copy; 2001-{{ 'now' | date: "%Y" }} Joakim Hertze. Built with <a href="http://jekyllrb.com/">Jekyll</a>, hosted on <a href="http://github">GitHub</a>. Copy set in Calluna, ampersands on the highlights page in Apolline STD, menu in Helvetica and logotype in FF Dax Condensed.</p>
-	</div>
- </body>
+<!doctype html>
+<html lang="sv">
+	<head>
+    	<meta charset="utf-8">
+    	<title>{% if page.title %}{{ page.title }} &mdash; {% endif %}Joakim Hertze</title>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    	<meta name="viewport" content="maximum-scale=1.0" />
+    	<link rel="stylesheet" media="screen, projection" href="/style.css" type="text/css">
+    	<link rel="shortcut icon" href="/favicon.ico">
+    	<script type="text/javascript" src="http://use.typekit.com/awv0hkv.js"></script>
+    	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	</head>
+	<body>
+		<header>
+			<img src="./bilder/avatar.jpg">
+			<p><em>Joakim Hertze</em> är psykiatriker och amatörlöpare. Han drömmer om att skriva romaner.</p>
+		</header>
+    	<nav>
+    		<ul>
+    			<li>{% unless page.title %}<span class="fokus">Om mig</span>{% else %}<a href="/">Om mig</a>{% endunless %}</li>
+				<li>{% if page.title == 'Kontakt'%}<span class="fokus">Kontakta mig</span>{% else %}<a href="../kontakt.html">Kontakta mig</a>{% endif %}</li>
+				<li>{% if page.title == 'Projekt'%}<span class="fokus">Projekt</span>{% else %}<a href="../projekt.html">Projekt</a>{% endif %}</li>
+    		</ul>
+		</nav>
+		<article>
+			{{ content }}
+		</article>
+		<footer>
+			<p>&copy; {{ 'now' | date: "%Y" }} Joakim Hertze. Byggt med <a href="http://jekyllrb.com/">Jekyll</a> och publicerat via <a href="http://github">GitHub</a>. Brödtexten är satt med FF Nuvo Web Pro och rubriker med Fertigo Pro.</p>
+		</footer>
+	</body>
 </html>

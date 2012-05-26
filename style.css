@@ -1,30 +1,119 @@
+/* @override http://localhost:4000/style.css */
+
+/* -----------------------------------------------------------
+	Grundläggande inställningar
+----------------------------------------------------------- */
+
 * { 
 	padding: 0; 
 	margin: 0; 
 }
 
 body {
-	font: 140% Helvetica;
+	font: 110% Helvetica;
 	font-weight: 300;
+	background-color: #b2aba0;
+	color: #58544f;
+
+}
+
+
+/* -----------------------------------------------------------
+	Layout
+----------------------------------------------------------- */
+
+html {
+	border-top: 5px solid #c4570d;
+}
+
+body {
+	width: 42em;
+	margin: 0 auto;
+}
+
+nav {
+	position: fixed;
+	top: 11.5em;
+	width: 12.5em;
+	text-align: right;
+}
+
+header {
+	position: fixed;
+	top: 12.5em;
+	width: 16em;
+	text-align: right;
+	margin-top: 1.875em;
+	margin-left: -6em;
+}
+
+article {
+	width: 30em;
+	margin-left: 12em;
+	margin-top: 6em;
+}
+
+footer {
+	width: 37.5em;
+	margin-left: 15em;
+	margin-top: 3.75em;
+}
+/* -----------------------------------------------------------
+	Typografi
+----------------------------------------------------------- */
+
+
+header img {
+	border-radius: 3px;
+	width: 4em;
+	height: 4em;
+	border: 5px solid #a69f96;
+	margin: 0 -5px 10px 15px;
+	float: right;
+}
+
+nav ul {
+	list-style-type: none;
 }
 
 p { 
-	color: #000; 
 	font-size: 1em; 
-	line-height: 1.4em; 
-	margin-bottom: 1.4em; 
+	line-height: 1.5em; 
+	margin-bottom: 1.5em; 
 	-webkit-font-smoothing: antialiased; 
 }
 
-h1 {
+header p {
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+article h1 {
 	font-size: 1.5em;
 	line-height: 0.933em;
 	margin: 0.933em 0;
 	font-weight: 300;
 }
 
+header h1 {
+	font-size: 1.5em;
+	font-weight: 300;
+	margin-top: 1.5em;
+}
+
+nav {
+	font-size: 0.8em;
+	line-height: 1.875em;
+	font-weight: bold;
+}
+
+footer {
+	font-size: 0.8em;
+	line-height: 1.875em;
+}
+
 a { 
-	color: #ff9131; 
+	color: #b24f0c; 
 	font-weight: bold; 
 	text-decoration: none; 
 	-webkit-transition:all .2s ease-in-out;
@@ -34,7 +123,20 @@ a {
 }
 
 a:hover { 
-	color: #ffd285; 
+	color: #5f5c56; 
+}
+
+nav a {
+	color: #58544f;
+}
+
+nav a:hover {
+	color: #7e7971;
+}
+
+.fokus {
+	border-left: 5px solid rgba(196,87,13,0.6);
+	padding-left: 8px;
 }
 
 #social img {
