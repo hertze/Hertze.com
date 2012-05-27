@@ -33,17 +33,17 @@ body {
 
 nav {
 	position: fixed;
-	top: 11.5em;
+	top: 11.3em;
 	width: 12.5em;
 	text-align: right;
 }
 
 header {
 	position: fixed;
-	top: 15.25em;
-	width: 18em;
+	top: 15.05em;
+	width: 17em;
 	text-align: right;
-	margin-left: -8em;
+	margin-left: -7em;
 }
 
 article {
@@ -53,9 +53,9 @@ article {
 }
 
 footer {
-	width: 37.5em;
-	margin-left: 15em;
-	margin-top: 3.75em;
+	width: 30em;
+	margin-left: 12em;
+	margin-top: 3em;
 }
 
 /* -----------------------------------------------------------
@@ -108,7 +108,7 @@ nav {
 	font-weight: bold;
 }
 
-footer {
+footer p {
 	font-size: 0.8em;
 	line-height: 1.875em;
 }
