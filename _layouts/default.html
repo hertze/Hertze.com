@@ -17,7 +17,6 @@
     	<nav>
     		<ul>
     			<li>{% unless page.title %}<span class="fokus">Om mig</span>{% else %}<a href="/">Om mig</a>{% endunless %}</li>
-				<li>{% if page.title == 'Kontakt'%}<span class="fokus">Kontakta mig</span>{% else %}<a href="../kontakt.html">Kontakta mig</a>{% endif %}</li>
 				<li>{% if page.title == 'Projekt'%}<span class="fokus">Projekt</span>{% else %}<a href="../projekt.html">Projekt</a>{% endif %}</li>
     		</ul>
 		</nav>
@@ -25,7 +24,7 @@
 			{{ content }}
 		</article>
 		<footer>
-			<p>&copy; {{ 'now' | date: "%Y" }} Joakim Hertze. Byggt med <a href="http://jekyllrb.com/">Jekyll</a> och publicerat via <a href="http://github">GitHub</a>. Brödtexten är satt med FF Nuvo Web Pro och rubriker med Fertigo Pro.</p>
+			<p>&copy; {{ 'now' | date: "%Y" }} Joakim Hertze. Byggt med <a href="http://jekyllrb.com/">Jekyll</a> och publicerat via <a href="http://github">GitHub</a>. Brödtexten är satt med FF Nuvo Web Pro och rubriker med Fertigo Pro. Kontakta mig via gärna via <a href="mailto:&#100;&#101;&#115;&#107;&#64;&#115;w&#101;&#100;i&#115;&#104;&#112;i&#120;&#101;&#108;&#115;&#46;&#99;&#111;&#109;">epost</a>, eller <a href="http://twitter.com/hertze">Twitter</a>.</p>
 		</footer>
 	</body>
 </html>
