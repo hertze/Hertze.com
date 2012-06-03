@@ -10,15 +10,13 @@
     	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</head>
 	<body>
-		<header>
-			<img src="./bilder/avatar.jpg">
-			<p><em>Joakim Hertze</em> är psykiatriker och amatörlöpare. Han drömmer om att skriva romaner.</p>
-		</header>
     	<nav>
     		<ul>
     			<li>{% unless page.title %}<span class="fokus">Om mig</span>{% else %}<a href="/">Om mig</a>{% endunless %}</li>
-				<li>{% if page.title == 'Projekt'%}<span class="fokus">Projekt</span>{% else %}<a href="../projekt.html">Projekt</a>{% endif %}</li>
+				<li>{% if page.title == 'Projekt'%}<span class="fokus">Projekt</span>{% else %}<a href="../projekt/">Projekt</a>{% endif %}</li>
     		</ul>
+    		<img src="../bilder/avatar.jpg">
+			<p><em>Joakim Hertze</em> är psykiatriker och amatörlöpare. Han drömmer om att skriva romaner.</p>
 		</nav>
 		<article>
 			{{ content }}

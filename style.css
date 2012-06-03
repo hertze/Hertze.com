@@ -34,16 +34,9 @@ body {
 nav {
 	position: fixed;
 	top: 11.3em;
-	width: 12.5em;
+	width: 20em;
 	text-align: right;
-}
-
-header {
-	position: fixed;
-	top: 15.05em;
-	width: 17em;
-	text-align: right;
-	margin-left: -7em;
+	margin-left: -8em;
 }
 
 article {
@@ -62,10 +55,10 @@ footer {
 	Typografi
 ----------------------------------------------------------- */
 
-header img {
+nav img {
 	border-radius: 3px;
-	width: 4em;
-	height: 4em;
+	width: 5em;
+	height: 5em;
 	border: 5px solid #a69f96;
 	margin: 0 -5px 10px 15px;
 	float: right;
@@ -73,6 +66,7 @@ header img {
 
 nav ul {
 	list-style-type: none;
+	margin-bottom: 1.875em;
 }
 
 p { 
