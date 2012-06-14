@@ -12,7 +12,7 @@
 body {
 	font: 110% Helvetica;
 	font-weight: 300;
-	background-color: #b2aba0;
+	background-color: #b3ada2;
 	color: #58544f;
 
 }
@@ -27,16 +27,16 @@ html {
 }
 
 body {
-	width: 42em;
+	width: 44em;
 	margin: 0 auto;
 }
 
 nav {
 	position: fixed;
 	top: 11.3em;
-	width: 20em;
+	width: 22em;
 	text-align: right;
-	margin-left: -8em;
+	margin-left: -10em;
 }
 
 article {
@@ -54,6 +54,12 @@ footer {
 /* -----------------------------------------------------------
 	Typografi
 ----------------------------------------------------------- */
+
+nav {
+	font-size: 0.8em;
+	line-height: 1.875em;
+	font-weight: bold;
+}
 
 nav img {
 	border-radius: 3px;
@@ -76,10 +82,8 @@ p {
 	-webkit-font-smoothing: antialiased; 
 }
 
-header p {
-	font-size: 0.8em;
+nav p {
 	line-height: 1.875em;
-	font-weight: bold;
 }
 
 article h1 {
@@ -89,22 +93,31 @@ article h1 {
 	font-weight: 300;
 }
 
-header h1 {
-	font-size: 1.5em;
-	line-height: 2em;
+article h2 {
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 0.75em 0;
 	font-weight: 300;
-	margin-top: 1.5em;
-}
-
-nav {
-	font-size: 0.8em;
-	line-height: 1.875em;
-	font-weight: bold;
 }
 
 footer p {
 	font-size: 0.8em;
 	line-height: 1.875em;
+}
+
+article li {
+	font-size: 0.8em;
+	line-height: 1.875em;
+	padding: 0.625em;
+	margin: 0.625em 0;
+	list-style: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: rgba(0,0,0,0.05); 
+}
+
+article li p {
+	margin: 0;
 }
 
 a { 
@@ -134,40 +147,42 @@ nav a:hover {
 	padding-left: 8px;
 }
 
-#social img {
-	margin-right: 10px;
-}
-
-#social a { 
-	opacity: 0.5;
-	-webkit-transition:all .5s ease-in-out;
-	-moz-transition:all .5s ease-in-out;
-	-o-transition:all .5s ease-in-out;
-	transition:all .5s ease-in-out;
-}
-
-#social a:hover { opacity: 1;}
-
-#about { 
-	width: 21em;  
-	margin: 10% auto 0 12% !important;
-}
-
-#attribution { 
-	width: 25em;  
-	margin: 4em auto 0 12% !important;
-	font-size: 0.8em;
-	opacity: 0.3;
-	position: absolute;
-	bottom: 1em;
-	-webkit-transition:all .2s ease-in-out;
-	-moz-transition:all .2s ease-in-out;
-	-o-transition:all .2s ease-in-out;
-	transition:all .2s ease-in-out;
-}
-
-#attribution:hover {opacity: 1;}
 
 .typekit-badge {
 	display:none !important;
+}
+
+
+/* -----------------------------------------------------------
+	Github Gist
+----------------------------------------------------------- */
+
+.gist{
+  margin: 15px 0 !important;
+  font-size: 0.7em;
+}
+
+.gist-file{
+  border: none !important;
+}
+
+.gist-meta{
+  border: 1px solid #D2d2d2 !important;
+  padding: 12px !important;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+
+}
+
+.gist-data{
+  padding: 15px !important;
+  border: 1px solid #D2d2d2 !important;
+  border-bottom: none !important;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  height: 30em !important;
 }

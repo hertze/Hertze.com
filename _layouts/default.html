@@ -13,7 +13,9 @@
     	<nav>
     		<ul>
     			<li>{% unless page.title %}<span class="fokus">Om mig</span>{% else %}<a href="/">Om mig</a>{% endunless %}</li>
-				<li>{% if page.title == 'Projekt'%}<span class="fokus">Projekt</span>{% else %}<a href="../projekt/">Projekt</a>{% endif %}</li>
+    			<li>{% if page.title == 'Kod'%}<span class="fokus">Kod</span>{% else %}<a href="../Kod.html">Kod</a>{% endif %}</li>
+    			<li>{% if page.title == 'Skönlitterära texter'%}<span class="fokus">Skönlitterära texter</span>{% else %}<a href="../fiction.html">Skönlitterära texter</a>{% endif %}</li>
+    			<li>{% if page.title == 'Akademiska texter'%}<span class="fokus">Akademiska texter</span>{% else %}<a href="../academics.html">Akademiska texter</a>{% endif %}</li>
     		</ul>
     		<img src="../bilder/avatar.jpg">
 			<p><em>Joakim Hertze</em> är psykiatriker och amatörlöpare. Han drömmer om att skriva romaner.</p>
@@ -22,7 +24,7 @@
 			{{ content }}
 		</article>
 		<footer>
-			<p>&copy; {{ 'now' | date: "%Y" }} Joakim Hertze. Byggt med <a href="http://jekyllrb.com/">Jekyll</a> och publicerat via <a href="http://github">GitHub</a>. Brödtexten är satt med FF Nuvo Web Pro och rubriker med Fertigo Pro. Kontakta mig via gärna via <a href="mailto:&#100;&#101;&#115;&#107;&#64;&#115;w&#101;&#100;i&#115;&#104;&#112;i&#120;&#101;&#108;&#115;&#46;&#99;&#111;&#109;">epost</a>, eller <a href="http://twitter.com/hertze">Twitter</a>.</p>
+			<p>&copy; {{ 'now' | date: "%Y" }} Joakim Hertze. Byggt med <a href="http://jekyllrb.com/">Jekyll</a> och publicerat via <a href="http://pages.github.com/">GitHub Pages</a>. Brödtexten är satt med FF Nuvo Web Pro och rubriker med Fertigo Pro. Kontakta mig via gärna via <a href="mailto:&#100;&#101;&#115;&#107;&#64;&#115;w&#101;&#100;i&#115;&#104;&#112;i&#120;&#101;&#108;&#115;&#46;&#99;&#111;&#109;">epost</a>, eller <a href="http://twitter.com/hertze">Twitter</a>.</p>
 		</footer>
 	</body>
 </html>
