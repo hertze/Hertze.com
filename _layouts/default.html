@@ -8,14 +8,15 @@
     	<link rel="shortcut icon" href="/favicon.ico">
     	<script type="text/javascript" src="http://use.typekit.com/awv0hkv.js"></script>
     	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    	<script src="http://hertze.nfshost.com/mint/?js" type="text/javascript"></script>
 	</head>
 	<body>
     	<nav>
     		<ul>
     			<li>{% unless page.title %}<span class="fokus">Om mig</span>{% else %}<a href="/">Om mig</a>{% endunless %}</li>
-    			<li>{% if page.title == 'Kod'%}<span class="fokus">Kod</span>{% else %}<a href="../Kod.html">Kod</a>{% endif %}</li>
     			<li>{% if page.title == 'Skönlitterära texter'%}<span class="fokus">Skönlitterära texter</span>{% else %}<a href="../fiction.html">Skönlitterära texter</a>{% endif %}</li>
     			<li>{% if page.title == 'Akademiska texter'%}<span class="fokus">Akademiska texter</span>{% else %}<a href="../academics.html">Akademiska texter</a>{% endif %}</li>
+    			<li>{% if page.title == 'Lite av varje'%}<span class="fokus">Lite av varje</span>{% else %}<a href="../bitsnbobs.html">Lite av varje</a>{% endif %}</li>
     		</ul>
     		<img src="../bilder/avatar.jpg">
 			<p><em>Joakim Hertze</em> är psykiatriker och amatörlöpare. Han drömmer om att skriva romaner.</p>
@@ -24,7 +25,8 @@
 			{{ content }}
 		</article>
 		<footer>
-			<p>&copy; {{ 'now' | date: "%Y" }} Joakim Hertze. Byggt med <a href="http://jekyllrb.com/">Jekyll</a> och publicerat via <a href="http://pages.github.com/">GitHub Pages</a>. Brödtexten är satt med FF Nuvo Web Pro och rubriker med Fertigo Pro. Kontakta mig via gärna via <a href="mailto:&#100;&#101;&#115;&#107;&#64;&#115;w&#101;&#100;i&#115;&#104;&#112;i&#120;&#101;&#108;&#115;&#46;&#99;&#111;&#109;">epost</a>, eller <a href="http://twitter.com/hertze">Twitter</a>.</p>
+			<p>&copy; {{ 'now' | date: "%Y" }} Joakim Hertze. Byggt med <a href="http://jekyllrb.com/">Jekyll</a> och publicerat via <a href="http://pages.github.com/">GitHub Pages</a>. Brödtexten är satt med FF Nuvo Web Pro och rubriker med Fertigo Pro. Kontakta mig via gärna via <span id="obf"><script>document.getElementById("obf").innerHTML="<n uers=\"znvygb:fbpvny@uregmr.pbz\" >rcbfg</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
+<noscript><span style="unicode-bidi:bidi-override;direction:rtl;">moc.eztreh@laicos</span></noscript></span>, eller <a href="http://twitter.com/hertze">Twitter</a>.</p>
 		</footer>
 	</body>
 </html>

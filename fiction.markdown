@@ -5,7 +5,7 @@ title: Skönlitterära texter
 
 # Skönlitterära texter
 
-## Noveller och snuttar
+## Kortare
 
 * ### [Snön lyser vit på taken](/files/snon-lyser-vit-pa-taken.pdf)
 
